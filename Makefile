@@ -8,7 +8,7 @@ LANGS  = awk c cmake coffeescript colortest csharp css cython default dot \
 MIXINS = $(wildcard mixins/*.nanorc)
 FILES  = $(addsuffix .nanorc, $(LANGS))
 ALL    = $(addprefix build/, $(FILES)) build/ALL.nanorc
-DIR    = $(HOME)/.nano/syntax
+DIR    = /usr/local/share/nano
 THEME  = theme.sed
 FILTER = sed -f mixins.sed | sed -f $(THEME)
 
